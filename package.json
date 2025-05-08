@@ -1,0 +1,27 @@
+{
+  "name": "express-auth-app",
+  "version": "1.0.0",
+  "description": "Express.js와 MySQL을 사용한 간단한 회원가입 및 로그인 시스템 (연습용 프로젝트)",
+  "homepage": "https://github.com/DS0UP/express-auth-app#readme",
+  "bugs": {
+    "url": "https://github.com/DS0UP/express-auth-app/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DS0UP/express-auth-app.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "express-session": "^1.18.1",
+    "mysql2": "^3.14.1"
+  }
+}
