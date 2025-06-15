@@ -3,6 +3,7 @@ const session = require('express-session');
 const dotenv = require('dotenv');
 const path = require('path');
 const userRouter = require('./routes/user');
+const postRouter = require('./routes/post');
 
 dotenv.config();
 
@@ -20,7 +21,8 @@ app.use(session({
     saveUninitialized: true
 }));
 
-app.use('/', userRouter);
+app.use('/api/user', userRouter);
+app.use('/api/post', postRouter);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
